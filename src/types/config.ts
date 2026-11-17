@@ -46,9 +46,7 @@ export type SiteConfig = {
 	showLastModified: boolean; // 控制"上次编辑"卡片显示的开关
 
 	// 页面开关配置
-	pages: {
-		sponsor: boolean; // 赞助页面开关
-	};
+	pages: Record<string, boolean>;
 
 	// 文章列表布局配置
 	postListLayout: {

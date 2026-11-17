@@ -2,8 +2,6 @@
 import { Icon } from "astro-icon/components";
 import { licenseConfig } from "@/config/licenseConfig";
 import { profileConfig } from "@/config/profileConfig";
-import { siteConfig } from "@/config/siteConfig";
-import { sponsorConfig } from "@/config/sponsorConfig";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import { formatDateToYYYYMMDD } from "@/utils/date-utils";
@@ -107,13 +105,6 @@ const licenseConf = licenseConfig;
           </a>
         </div>
         <div class="flex gap-3">
-          <!-- Support Button -->
-        {sponsorConfig.showButtonInPost && siteConfig.pages.sponsor && (
-          <a href="/sponsor/" class="btn bg-[#C148AC] hover:bg-[#a83c96] text-white font-bold px-5 py-2 rounded-lg transition-colors">
-            打赏作者
-          </a>
-        )}
-          
           <button class="btn bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-regular-bg-hover)] text-[var(--btn-content)] border border-blue-600 font-bold px-5 py-2 rounded-lg transition-colors flex items-center gap-2" onclick={`navigator.clipboard.writeText(window.location.href).then(() => {
             const toast = document.getElementById('copy-toast');
             if (toast) {

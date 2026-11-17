@@ -5,111 +5,58 @@ import {
 	type NavBarSearchConfig,
 	NavBarSearchMethod,
 } from "../types/config";
-import { siteConfig } from "./siteConfig";
 
 // 根据页面开关动态生成导航栏配置
 const getDynamicNavBarConfig = (): NavBarConfig => {
 	const links: (NavBarLink | LinkPreset)[] = [
+		// 首页排在第一位
+		{
+			name: "首页",
+			url: "/",
+			icon: "feather:home",
+		},
+		// 一级导航项
+		{
+			name: "效率软件",
+			url: "/categories/效率软件/",
+			icon: "feather:book-open",
+		},
+		{
+			name: "神级网站",
+			url: "/categories/神级网站/",
+			icon: "feather:book-open",
+		},
+		{
+			name: "浏览器插件",
+			url: "/categories/浏览器插件/",
+			icon: "feather:book-open",
+		},
+		{
+			name: "Hexo 魔改",
+			url: "/categories/Hexo魔改/",
+			icon: "feather:book-open",
+		},
+		{
+			name: "Hugo 魔改",
+			url: "/categories/Hugo魔改/",
+			icon: "feather:book-open",
+		},
+		{
+			name: "Astro 魔改",
+			url: "/categories/Astro魔改/",
+			icon: "feather:book-open",
+		},
+		{
+			name: "网站实战",
+			url: "/categories/网站实战/",
+			icon: "feather:book-open",
+		},
+		{
+			name: "Obsidian教程",
+			url: "/categories/Obsidian教程/",
+			icon: "feather:book-open",
+		},
 	];
-
-	// 支持自定义导航栏链接,并且支持多级菜单
-	links.push({
-		name: "山海手记",
-		url: "/links/",
-		icon: "feather:book",
-		children: [
-			{
-				name: "玩易",
-				url: "/categories/玩易/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "玄黄",
-				url: "/categories/玄黄/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "燃灯",
-				url: "/categories/燃灯/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "草堂",
-				url: "/categories/草堂/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "青囊",
-				url: "/categories/青囊/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "廿四",
-				url: "/html/廿四/",
-				external: true,
-				icon: "feather:book-open",
-			},
-			{
-				name: "妖言",
-				url: "/categories/妖言/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "坐忘",
-				url: "/categories/坐忘/",
-				icon: "feather:book-open",
-			},
-		],
-	});
-
-	links.push({
-		name: "山海研究所",
-		url: "/links/",
-		icon: "feather:layers",
-		children: [
-			{
-				name: "效率软件",
-				url: "/categories/效率软件/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "神级网站",
-				url: "/categories/神级网站/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "浏览器插件",
-				url: "/categories/浏览器插件/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "Hexo 魔改",
-				url: "/categories/Hexo魔改/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "Hugo 魔改",
-				url: "/categories/Hugo魔改/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "Astro 魔改",
-				url: "/categories/Astro魔改/",
-				icon: "feather:book-open",
-			},
-			{
-				name: "网站实战",
-				url: "/categories/网站实战/",
-				icon: "feather:book-open",
-			},			
-			{
-				name: "Obsidian教程",
-				url: "/categories/Obsidian教程/",
-				icon: "feather:book-open",
-			},
-		],
-	});
-
 
 	links.push({
 		name: "导航",
@@ -127,7 +74,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				url: "/html/kael-music/",
 				external: true,
 				icon: "feather:music",
-			},			
+			},
 			{
 				name: "工具箱",
 				url: "/navigation/",
@@ -142,14 +89,12 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		icon: "feather:info",
 		children: [
 			LinkPreset.About,
-
 			{
 				name: "项目",
 				url: "/project/",
 				icon: "feather:code",
 			},
 			LinkPreset.Friends,
-			...(siteConfig.pages.sponsor ? [LinkPreset.Sponsor] : []), // 根据配置决定是否添加赞助页面
 		],
 	});
 	// 仅返回链接，其它导航搜索相关配置在模块顶层常量中独立导出

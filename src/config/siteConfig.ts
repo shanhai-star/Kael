@@ -13,7 +13,6 @@ export const siteConfig: SiteConfig = {
 	keywords: [
 		"ShanHai",
 		"山海",
-		"山海手记",
 		"资源",
 		"软件",
 		"网站",
@@ -59,9 +58,7 @@ export const siteConfig: SiteConfig = {
 
 	// 页面开关配置 - 控制特定页面的访问权限，设为false会返回404
 	// bangumi的数据为编译时获取的，所以不是实时数据，请配置bangumi.userId
-	pages: {
-		sponsor: true, // 赞助页面开关
-	},
+	pages: {},
 
 	// 文章列表布局配置
 	postListLayout: {
