@@ -50,31 +50,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			url: "/categories/浏览器插件/",
 			icon: "feather:book-open",
 		},
-		{
-			name: "Hexo 魔改",
-			url: "/categories/Hexo魔改/",
-			icon: "feather:book-open",
-		},
-		{
-			name: "Hugo 魔改",
-			url: "/categories/Hugo魔改/",
-			icon: "feather:book-open",
-		},
-		{
-			name: "Astro 魔改",
-			url: "/categories/Astro魔改/",
-			icon: "feather:book-open",
-		},
-		{
-			name: "网站实战",
-			url: "/categories/网站实战/",
-			icon: "feather:book-open",
-		},
-		{
-			name: "Obsidian教程",
-			url: "/categories/Obsidian教程/",
-			icon: "feather:book-open",
-		},
 	];
 
 	links.push({
