@@ -9,11 +9,30 @@ import {
 // 根据页面开关动态生成导航栏配置
 const getDynamicNavBarConfig = (): NavBarConfig => {
 	const links: (NavBarLink | LinkPreset)[] = [
-		// 首页排在第一位
+		// 导航放在第一位
 		{
-			name: "首页",
-			url: "/",
-			icon: "feather:home",
+			name: "导航",
+			url: "/links/",
+			icon: "feather:compass",
+			children: [
+				{
+					name: "音乐网站",
+					url: "/html/music/",
+					external: true,
+					icon: "feather:music",
+				},
+				{
+					name: "音乐网站（NEW）",
+					url: "/html/kael-music/",
+					external: true,
+					icon: "feather:music",
+				},
+				{
+					name: "工具箱",
+					url: "/navigation/",
+					icon: "feather:tool",
+				},
+			],
 		},
 		// 一级导航项
 		{
@@ -57,31 +76,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			icon: "feather:book-open",
 		},
 	];
-
-	links.push({
-		name: "导航",
-		url: "/links/",
-		icon: "feather:compass",
-		children: [
-			{
-				name: "音乐网站",
-				url: "/html/music/",
-				external: true,
-				icon: "feather:music",
-			},
-			{
-				name: "音乐网站（NEW）",
-				url: "/html/kael-music/",
-				external: true,
-				icon: "feather:music",
-			},
-			{
-				name: "工具箱",
-				url: "/navigation/",
-				icon: "feather:tool",
-			},
-		],
-	});
 
 	links.push({
 		name: "关于",

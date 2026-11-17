@@ -16,7 +16,16 @@
 #navbar button,
 #navbar .btn-plain {
     color: #394E6A; /* 白天模式颜色 */
-    font-size: 1.25rem; /* 进一步增大导航栏字号 */
+    font-size: 1.25rem; /* 图标按钮字号 */
+}
+
+/* 菜单项文字：禁止换行并缩小尺寸，避免中文逐字竖排 */
+#navbar .dropdown-container > a.btn-plain,
+#navbar .dropdown-container > button.btn-plain {
+    font-size: 1rem; /* 菜单项字号缩小，容纳更多项 */
+    white-space: nowrap; /* 关键：禁止中文逐字换行成竖排 */
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
 }
 
 /* 黑暗模式下的导航栏颜色 */
