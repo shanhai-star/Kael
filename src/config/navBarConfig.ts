@@ -44,11 +44,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		icon: "feather:info",
 		children: [
 			LinkPreset.About,
-			{
-				name: "项目",
-				url: "/project/",
-				icon: "feather:code",
-			},
 			LinkPreset.Friends,
 		],
 	});
