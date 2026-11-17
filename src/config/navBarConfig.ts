@@ -29,13 +29,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		{
 			name: "音乐网站",
 			url: "/html/music/",
-			external: true,
-			icon: "feather:music",
-		},
-		{
-			name: "音乐网站（NEW）",
-			url: "/html/kael-music/",
-			external: true,
 			icon: "feather:music",
 		},
 		{
