@@ -121,18 +121,16 @@ export const siteConfig: SiteConfig = {
 			},
 			credit: {
 				enable: {
-					desktop: true, // 桌面端显示横幅图片来源文本
-					mobile: true, // 移动端显示横幅图片来源文本
+					desktop: false, // 桌面端显示横幅图片来源文本
+					mobile: false, // 移动端显示横幅图片来源文本
 				},
 				text: {
-					desktop: "WeChat - 山海手记", // 桌面端要显示的来源文本
-					mobile: "WeChat - 山海手记", // 移动端要显示的来源文本
+					desktop: "", // 桌面端要显示的来源文本
+					mobile: "", // 移动端要显示的来源文本
 				},
 				url: {
-					desktop:
-						"https://mp.weixin.qq.com/mp/homepage?__biz=MzU2MTI5MzE4OA==&hid=1&sn=356f3016aeac48fc034804fca1307349&scene=18#wechat_redirect", // 桌面端原始艺术品或艺术家页面的 URL 链接
-					mobile:
-						"https://mp.weixin.qq.com/mp/homepage?__biz=MzU2MTI5MzE4OA==&hid=1&sn=356f3016aeac48fc034804fca1307349&scene=18#wechat_redirect", // 移动端原始艺术品或艺术家页面的 URL 链接
+					desktop: "", // 桌面端原始艺术品或艺术家页面的 URL 链接
+					mobile: "", // 移动端原始艺术品或艺术家页面的 URL 链接
 				},
 			},
 			navbar: {

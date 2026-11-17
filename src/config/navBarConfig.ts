@@ -14,7 +14,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 
 	// 支持自定义导航栏链接,并且支持多级菜单
 	links.push({
-		name: "少阳手记",
+		name: "山海手记",
 		url: "/links/",
 		icon: "feather:book",
 		children: [
@@ -63,7 +63,7 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	});
 
 	links.push({
-		name: "少阳研究所",
+		name: "山海研究所",
 		url: "/links/",
 		icon: "feather:layers",
 		children: [
