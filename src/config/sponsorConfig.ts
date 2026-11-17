@@ -19,14 +19,6 @@ export const sponsorConfig: SponsorConfig = {
 			enabled: true,
 		},
 		{
-			name: "微信",
-			icon: "ri:wechat-2-line",
-			qrCode: "/assets/images/wechat.webp", // 收款码图片路径
-			link: "",
-			description: "使用 微信 扫码赞助",
-			enabled: true,
-		},
-		{
 			name: "Bilibili",
 			icon: "ri:bilibili-line",
 			qrCode: "",
