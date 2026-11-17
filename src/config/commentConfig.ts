@@ -2,18 +2,18 @@ import type { CommentConfig } from "../types/config";
 
 export const commentConfig: CommentConfig = {
 	// 评论系统类型: none, twikoo, waline, giscus, disqus, artalk，默认为none，即不启用评论系统
-	type: "waline",
+	type: "none",
 
 	//twikoo评论系统配置
 	twikoo: {
-		envId: "https://twikoo.zayck34.dpdns.org",
+		envId: "",
 		lang: "zh-CN", // 设置 Twikoo 评论系统语言
 		visitorCount: true, // 文章访问量统计功能。
 	},
 
 	//waline评论系统配置
 	waline: {
-		serverURL: "https://waline.zayck34.dpdns.org",
+		serverURL: "",
 		lang: "zh-CN", // 设置 Waline 评论系统语言
 		login: "enable", // 评论登录模式。可选值如下：
 		//   'enable'   —— 默认，允许访客匿名评论和用第三方 OAuth 登录评论，兼容性最佳。

@@ -117,12 +117,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		icon: "feather:compass",
 		children: [
 			{
-				name: "个人主页",
-				url: "https://zayck-top.pages.dev",
-				external: true,
-				icon: "feather:monitor",
-			},
-			{
 				name: "音乐网站",
 				url: "/html/music/",
 				external: true,
