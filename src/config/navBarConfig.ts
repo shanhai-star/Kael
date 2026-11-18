@@ -28,8 +28,8 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		// 原「导航」下拉项提升为一级，放在浏览器插件后面
 		{
 			name: "音乐网站",
-			url: "/categories/音乐网站/",
-			icon: "feather:book-open",
+			url: "/music-sites/",
+			icon: "feather:music",
 		},
 		{
 			name: "工具箱",
