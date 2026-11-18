@@ -1,5 +1,4 @@
 import {
-	LinkPreset,
 	type NavBarConfig,
 	type NavBarLink,
 	type NavBarSearchConfig,
@@ -39,13 +38,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	];
 
 	links.push({
-		name: "关于",
-		url: "/content/",
-		icon: "feather:info",
-		children: [
-			LinkPreset.About,
-			LinkPreset.Friends,
-		],
+		name: "关于我",
+		url: "/about/",
+		icon: "feather:smile",
 	});
 	// 仅返回链接，其它导航搜索相关配置在模块顶层常量中独立导出
 	return { links } as NavBarConfig;
