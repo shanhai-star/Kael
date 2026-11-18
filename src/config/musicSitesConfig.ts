@@ -94,6 +94,14 @@ export const musicGroups: MusicGroup[] = [
 				color: "#1B6E3C",
 				short: "熊",
 			},
+			{
+				name: "一起听歌吧",
+				url: "https://happy.alang.run/#/",
+				desc: "在线一起听歌的协作房间，拉上朋友同步播放同一首歌，边听边聊",
+				domain: "happy.alang.run",
+				color: "#8B5CF6",
+				short: "听",
+			},
 		],
 	},
 ];
