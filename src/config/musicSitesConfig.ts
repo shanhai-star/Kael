@@ -94,22 +94,6 @@ export const musicGroups: MusicGroup[] = [
 				color: "#1B6E3C",
 				short: "熊",
 			},
-			{
-				name: "5sing 原创音乐",
-				url: "https://5sing.kugou.com/",
-				desc: "原创音乐基地，古风、民谣、翻唱、伴奏资源丰富，适合找小众原创",
-				domain: "5sing.kugou.com",
-				color: "#F28C28",
-				short: "5",
-			},
-			{
-				name: "淘声网",
-				url: "https://www.taosheng.net/",
-				desc: "海量音效与背景音乐素材，支持按场景检索，适合视频配乐找素材",
-				domain: "taosheng.net",
-				color: "#5B4B8A",
-				short: "淘",
-			},
 		],
 	},
 ];
