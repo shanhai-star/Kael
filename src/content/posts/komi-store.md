@@ -2,7 +2,6 @@
 title: 一个能把 GitHub 变成应用商店的神器：Komi Store
 published: 2026-11-17
 description: Komi Store 是一款开源跨平台应用商店，只收录 GitHub 上真正能安装的软件，找得快、下得准、更新还省心。
-image: /assets/images/komi-store-cover.webp
 tags: [开源软件, 工具推荐, GitHub]
 category: 效率软件
 ---
