@@ -1,0 +1,65 @@
+---
+import Icon from "@/components/misc/Icon.astro";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import { mirrorSites } from "@/config/mirrorSitesConfig";
+
+const title = "系统镜像网站";
+---
+
+<MainGridLayout title={title}>
+  <div
+    class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
+  >
+    <div class="card-base z-10 px-8 py-6 relative w-full">
+      <!-- 页面标题和描述 -->
+      <div class="mb-8">
+        <div class="flex items-center gap-2 mb-3">
+          <Icon icon="feather:server" size="2xl" class="text-primary dark:text-[var(--primary)]" />
+          <h2 class="text-2xl font-bold text-[#394E6A] dark:text-neutral-100">
+            {title}
+          </h2>
+        </div>
+        <p class="text-sm text-[#566880] dark:text-[#D9DAD6] leading-relaxed">
+          国内常用的开源系统镜像站合集，下载 Linux 发行版、软件包时，把软件源换成下面的镜像站可以大幅提升速度。点击卡片即可打开对应网站。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-4">
+        {
+          mirrorSites.map((site) => (
+            <a
+              href={site.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group relative block h-full rounded-2xl p-4 bg-white dark:bg-[#1A1B26] transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl"
+            >
+              <div class="flex items-center gap-4 h-full">
+                <!-- logo -->
+                <div class="relative shrink-0">
+                  <div
+                    class="w-14 h-14 rounded-xl flex items-center justify-center text-white text-xl font-bold shadow-sm"
+                    style={`background-color: ${site.color};`}
+                  >
+                    {site.short}
+                  </div>
+                </div>
+
+                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                  <h3 class="font-bold text-base text-[#394E6A] dark:text-neutral-100 group-hover:text-[var(--primary)] transition-colors duration-300 truncate mb-1">
+                    {site.name}
+                  </h3>
+                  <p class="text-sm text-[#566880] dark:text-[#D9DAD6] line-clamp-2 leading-relaxed mb-1">
+                    {site.desc}
+                  </p>
+                  <p class="text-xs text-[#8A97A8] dark:text-[#8A8D94] truncate">
+                    {site.domain}
+                  </p>
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</MainGridLayout>

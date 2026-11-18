@@ -21,9 +21,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			icon: "feather:book-open",
 		},
 		{
-			name: "浏览器插件",
-			url: "/categories/浏览器插件/",
-			icon: "feather:book-open",
+			name: "系统镜像网站",
+			url: "/system-images/",
+			icon: "feather:server",
 		},
 		// 原「导航」下拉项提升为一级，放在浏览器插件后面
 		{
